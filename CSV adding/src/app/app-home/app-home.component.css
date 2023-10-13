@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the content is centered vertically */
+    background-color: #f2f2f2; /* Background color for the entire page */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow for the card */
+    text-align: center;
+    width: 70%;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333; /* Text color */
+}
+
+button {
+    background-color: #111561; /* Button background color (blue) */
+    color: #fff; /* Button text color (white) */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove button border */
+    margin: 10px; /* Margin around the buttons */
+    cursor: pointer; /* Show a hand cursor on hover */
+    width: 50%;
+}
+
+/* Style the second button (Create SMS) differently */
+button:last-child {
+    background-color: #1b4f0e; /* Button background color (green) */
+}
+
+/* Add hover effect for buttons */
+button:hover {
+    background-color: #156861; /* Darker blue on hover */
+}
