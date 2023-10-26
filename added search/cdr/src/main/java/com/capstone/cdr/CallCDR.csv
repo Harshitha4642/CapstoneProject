@@ -1,0 +1,16 @@
+id,SubscriberName,SubscriberPhn,RecieverName,RecieverPhn,date,time,SubscriberLocation,RecieverLocation,type,duration,isFailed,HasVoiceMail,VoiceMailDuration
+3,Harshitha,8738272827,Srima,827829027,2023-10-11,22:29,"Hyderābād, India","Bangalore, India","Type(id=2, type=roaming, rate=150)",2,false,false,0
+4,Harshitha,8738272827,Srima,827829027,2023-10-17,02:34,"New Delhi, India","Nārāyanpur Kola, India","Type(id=1, type=not-roaming, rate=15)",9,false,false,0
+5,Harshitha,8738272827,Ashish,997877678,2023-10-10,03:35,"Phoenix, United States","Agwār, India","Type(id=2, type=roaming, rate=150)",0,true,true,7
+6,Harshitha,8738272827,Srima,827829027,2023-10-18,15:35,"Hyderābād, India","Agwār, India","Type(id=1, type=not-roaming, rate=15)",2,false,false,0
+7,Harshitha,8738272827,Srima,827829027,2023-10-14,15:36,"Yelahanka, India","Chicago, United States","Type(id=2, type=roaming, rate=150)",0,true,true,2
+8,Harshitha,8738272827,Ashish,997877678,2023-10-06,21:47,"Mirchi, India","Agwār, India","Type(id=1, type=not-roaming, rate=15)",12,false,false,0
+9,Srima,827829027,Likith,76887271,2023-10-13,19:48,"Hyderābād, India","Prayagraj, India","Type(id=1, type=not-roaming, rate=15)",0,true,true,3
+10,Harshitha,8738272827,Srima,827829027,2023-10-18,20:48,"Hyderābād, India","Bhālswa Jahangirpur, India","Type(id=1, type=not-roaming, rate=15)",2,false,false,0
+11,Harshitha,8738272827,Likith,76887271,2023-10-19,22:53,"Phoenix, United States","Hyderābād, India","Type(id=2, type=roaming, rate=150)",0,true,true,2
+12,Harshitha,8738272827,Srima,827829027,2023-10-19,14:52,"Hyderābād, India","Ghāziābād, India","Type(id=1, type=not-roaming, rate=15)",2,false,false,0
+13,Harshitha,8738272827,Likith,76887271,2023-10-11,16:53,"Chinchvad, India","Chicago, United States","Type(id=2, type=roaming, rate=150)",0,true,true,3
+14,Srima,827829027,Harshitha,8738272827,2023-10-18,16:25,"Hyderābād, India","Madurai, India","Type(id=1, type=not-roaming, rate=15)",2,false,false,0
+15,Srima,827829027,Harshitha,8738272827,2023-10-21,15:26,"Vadodara, India","Sijua, India","Type(id=1, type=not-roaming, rate=15)",0,true,true,2
+16,Srima,827829027,Likith,76887271,2023-10-18,17:18,"Jamshedpur, India","Jabalpur, India","Type(id=1, type=not-roaming, rate=15)",0,true,true,2
+17,Harshitha,8738272827,Likith,76887271,2023-10-12,18:38,"Hyderābād, India","Sijua, India","Type(id=1, type=not-roaming, rate=15)",3,false,false,0

@@ -1,0 +1,68 @@
+/* In your Angular component's CSS file (e.g., app.component.css) */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222; /* Dark background color */
+}
+
+.container {
+  max-width: 600px; /* Adjust the width as per your design */
+  padding: 20px;
+  border: 1px solid #1c4e18; /* Darker border color */
+  border-radius: 10px;
+  background-color: #153a19; /* Dark background color */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker box shadow */
+  color: #fff; /* Text color */
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #0c270a; /* Change to your desired button color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #0fe445; /* Change to your desired button hover color */
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.container button:active {
+  background-color: #0056b3; /* Change to your desired button active color */
+}
+
+/* Additional styling for the small buttons */
+.container div button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #0c270a; /* Change to your desired button color */
+}
+
+.container div button:hover {
+  background-color: #0fe445; /* Change to your desired button hover color */
+}
+
+.container div button:focus {
+  outline: none;
+}
+
+.container div button:active {
+  background-color: #0056b3; /* Change to your desired button active color */
+}

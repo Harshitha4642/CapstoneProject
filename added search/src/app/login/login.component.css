@@ -1,0 +1,167 @@
+/* Additional CSS for login form */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #020c45, #6ed77c);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #fff;
+    border-radius: 10px; /* Increase border-radius for a smoother look */
+    box-shadow: 0px 0px 15px rgb(28, 2, 72); /* Slightly larger and more pronounced shadow */
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    position: relative; /* For positioning additional elements */
+    overflow: hidden; /* Hide any overflowing content */
+
+    /* Add a subtle gradient background for a more stylish look */
+    background: linear-gradient(to bottom, #f7f7f7, #fff);
+
+    /* Add a slight rotation on hover for a playful effect */
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Add a hover effect for rotation and shadow */
+.login-container:hover {
+    box-shadow: 0px 0px 20px rgba(183, 242, 44, 0.947); /* Bigger shadow on hover */
+     /* Slight rotation on hover */
+}
+
+/* Center the login form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 300px; /* Adjust the max width for the form */
+}
+
+/* Add a subtle border to the input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+    margin: 5px 0; /* Add some vertical spacing between input fields */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #082441;
+}
+
+/* Style the submit button */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add space between the inputs and button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the form labels for a more modern look */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #333; /* Slightly darker text color */
+    font-size: 14px; /* Adjust font size for labels */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Increase the font size for the h2 element */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/* Larger font size for the heading */
+}
+
+
+
+/* .login-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}  
+
+/* label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+} */
+
+/* input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+/* Additional styles for button hover effect */
+/* button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); 
+} */

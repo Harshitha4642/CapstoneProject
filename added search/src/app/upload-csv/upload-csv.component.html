@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>File Upload</h2>
+        <form (ngSubmit)="onSubmit()" #fileUploadForm="ngForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Select File:</label>
+                <input type="file" name="file" id="file" (change)="onFileSelected($event)" accept=".pdf, .doc, .docx">
+            </div>
+            <button type="submit" [disabled]="!selectedFile">Upload</button>
+        </form>
+        {{status.status}}
+    </div>
+</body>
+</html>

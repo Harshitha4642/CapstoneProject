@@ -1,0 +1,51 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { AppLocation } from './AppLocation';
+import { AppType } from 'src/AppType';
+import { AppStatus } from 'src/AppStatus';
+import { Form } from './Form';
+import * as Papa from 'papaparse';
+import { Item } from 'src/Item';
+import { CSVCallObject } from './CSVCallObject';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HomeService {
+  
+  getHeaders(): HttpHeaders {
+    return new HttpHeaders({
+      'Authorization': 'Bearer ' + localStorage.getItem('token')
+    });
+  }
+
+  constructor(private router: Router, private http: HttpClient) { }
+
+  getAllLocations(): Observable<AppLocation[]>
+  {
+    const headers = this.getHeaders();
+    return this.http.get<AppLocation[]>(`http://localhost:8080/api/home/allLocations`, {headers});
+  }
+
+  getAllCallTypes(): Observable<AppType[]>
+  {
+    const headers = this.getHeaders();
+    return this.http.get<AppType[]>(`http://localhost:8080/api/home/allTypes`, {headers});
+  }
+
+  saveCDR(appForm: Form): Observable<AppStatus>
+  {
+    console.log(appForm);
+    const headers = this.getHeaders();
+    return this.http.post<AppStatus>(`http://localhost:8080/api/home/saveCDR`, appForm , {headers} );
+  }
+  
+  saveCDRFromCSV(callObjects: CSVCallObject[]): Observable<AppStatus>
+  {
+    const headers = this.getHeaders();
+    return this.http.post<AppStatus>('http://localhost:8080/api/home/saveCallCDRFromCSV', callObjects, {headers});
+  }
+
+}

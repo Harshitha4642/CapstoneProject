@@ -1,0 +1,8 @@
+1,Likith,76887271,Srima,827829027,2023-10-03,05:14,"Sijua, India","Gwalior, India",sent,"MessageType(id=1, type=not-roaming, rate=15)"
+2,Likith,76887271,Srima,827829027,2023-10-11,04:00,"Sijua, India","Sūrat, India",not-sent,"MessageType(id=1, type=not-roaming, rate=15)"
+3,Harshitha,8738272827,Likith,76887271,2023-10-17,05:00,"Hyderābād, India","Vishākhapatnam, India",not-sent,"MessageType(id=1, type=not-roaming, rate=15)"
+4,Harshitha,8738272827,Ashish,997877678,2023-10-13,04:00,"Sijua, India","Philadelphia, United States",sent,"MessageType(id=2, type=roaming, rate=150)"
+5,Srima,827829027,Likith,76887271,2023-10-12,02:19,"Lucknow, India","Dhanbād, India",not-sent,"MessageType(id=1, type=not-roaming, rate=15)"
+6,Harshitha,8738272827,Ashish,997877678,2023-10-18,03:00,"Hyderābād, India","Darbhanga, India",sent,"MessageType(id=1, type=not-roaming, rate=15)"
+7,Harshitha,8738272827,Ashish,997877678,2023-10-05,04:00,"Bangalore, India","Farīdābād, India",sent,"MessageType(id=1, type=not-roaming, rate=15)"
+8,Harshitha,8738272827,Likith,76887271,2023-10-12,04:00,"Tribeni, India","Punādih, India",sent,"MessageType(id=1, type=not-roaming, rate=15)"
