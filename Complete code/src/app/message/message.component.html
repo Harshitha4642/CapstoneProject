@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container">
+        <h2>Subscription Details</h2>
+        <form>
+            <label for="subscriber-id">Subscriber ID</label>
+            <input type="text" id="subscriber-id" name="subscriber-id" placeholder="Enter Subscriber ID" [(ngModel)]="form.subscriber">
+            <br><br>
+            <label for="receiver-id">Receiver ID</label>
+            <input type="text" id="receiver-id" name="reciever-id" placeholder="Enter Receiver ID" [(ngModel)]="form.reciever">
+            <br><br>
+            <label for="dateOf">Date</label>
+            <input type="date" id="dateOf" name="dateOf" [(ngModel)]="date">
+            <br><br>
+            <label for="duration">Time</label>
+            <input type="time" id="duration" name="duration" [(ngModel)]="form.time">
+            <br><br>
+            
+            <label for="subscriberLocation">Subscriber Location</label>
+            <input type = "text" id="subscriberLocation" name="subscriberLocation" [(ngModel)]="form.subscriberLocation" (input)="filterLocations(form.subscriberLocation, 'subscriber')">
+            <ul *ngIf="filteredSubscriberLocations.length > 0">
+            <li *ngFor="let location of filteredSubscriberLocations" (click)="selectLocation(location, 'subscriber')">{{ location.locationName }}</li>
+            </ul>
+            <br><br>
+
+            <label for="receiverLocation">Receiver Location</label>
+            <input type = "text" id="receiverLocation" name="receiverLocation" [(ngModel)]="form.recieverLocation" (input)="filterLocations(form.recieverLocation, 'receiver')">
+            <ul *ngIf="filteredReceiverLocations.length > 0">
+            <li *ngFor="let location of filteredReceiverLocations" (click)="selectLocation(location, 'receiver')">{{ location.locationName }}</li>
+            </ul>
+            <br><br>
+
+            <label for="subscription-type">Sent Status</label>
+            <select id="subscription-type" name="subscription-type" [(ngModel)]="form.status">
+                <option *ngFor="let type of messageStatus" [value]="type">{{ type }}</option>
+            </select>
+            <br><br>
+            <label for="subscription-type">Message type</label>
+            <select id="subscription-type" name="subscription-type" [(ngModel)]="form.type">
+                <option *ngFor="let type of messageType" [value]="type">{{ type }}</option>
+            </select>
+            <br><br>
+            <button type="submit" (click)="create()">Submit</button>
+        </form>
+        <p>{{status.status}}</p>
+    </div>
+</body>
+</html>

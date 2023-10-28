@@ -1,0 +1,67 @@
+/* Additional CSS for login form */
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71vh;
+}
+.login-container {
+  background-color: #fff;
+  border-radius: 10px; /* Increase border-radius for a smoother look */
+  box-shadow: 0px 0px 15px rgb(28, 2, 72); /* Slightly larger and more pronounced shadow */
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+  position: relative; /* For positioning additional elements */
+  overflow: hidden; /* Hide any overflowing content */
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Add a hover effect for rotation and shadow */
+.login-container:hover {
+  box-shadow: 0px 0px 20px rgba(21, 4, 107, 0.947); /* Bigger shadow on hover */
+   /* Slight rotation on hover */
+}
+
+/* Center the login form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 300px; /* Adjust the max width for the form */
+}
+
+/* Style the submit button */
+button {
+  background-color: #180d69;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 80px;
+  cursor: pointer;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add space between the inputs and button */
+}
+
+button:hover {
+  background-color: #0d1115;
+}
+
+/* Increase the font size for the h2 element */
+h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 50px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/* Larger font size for the heading */
+}

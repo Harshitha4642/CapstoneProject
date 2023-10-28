@@ -1,0 +1,101 @@
+/* In your Angular component's CSS file (e.g., app.component.css) */
+body {
+    background-color: #ffffff; /* Dark background color for the whole page */
+    color: #000000; /* Text color */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff; /* Dark background color for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker box shadow */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px; /* Adjust the width as per your design */
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container form label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container input[type="time"] {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color:  #0d0b634c; /* Dark input field background color */
+    color: #000000;
+    font-size: 16px;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color:  #0d0b634c; /* Dark input field background color */
+    color: #161250b7;
+    font-size: 16px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #281e7e; /* Change to your desired button color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0d0b24; /* Change to your desired button hover color */
+}
+
+.form-container button:focus {
+    outline: none;
+}
+
+.form-container button:active {
+    background-color: #14066d; /* Change to your desired button active color */
+}
+
+.form-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.form-container ul li {
+    cursor: pointer;
+    padding: 5px;
+    background-color:  #0e0c844c; /* Darker suggestion list background color */
+    color: #050303;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.form-container ul li:hover {
+    background-color: #2622e34c; /* Suggestion list item hover color */
+    color: #fff;
+}
+
+.form-container ul li:focus {
+    outline: none;
+}

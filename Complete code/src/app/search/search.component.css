@@ -1,0 +1,107 @@
+.form-container {
+    background-color: #a0a2e5;
+    border: 10px solidrgba(24, 17, 210, 0.637)c;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style for form labels */
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style for radio buttons and their labels */
+  .form-container input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Style for text input */
+  .form-container input[type="text"],
+  .form-container input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style for unordered lists */
+  .form-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style for list items within the form */
+  .form-container li {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  /* Style for the form search button */
+  .form-container button[type="submit"] {
+    background-color: #120c79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style for table headers and data cells */
+th, td {
+    padding: 13px;
+    text-align: left;
+}
+
+/* Style for table header cells */
+th {
+    background-color: #110b5a;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #c9c6ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style for table data cells */
+td {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid #c9ceff;
+}
+
+/* Style for alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #e0ddf5;
+}

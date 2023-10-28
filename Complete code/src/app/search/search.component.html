@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Form</title>
+</head>
+<body>
+  <div class = "form-container">
+  <form>
+    <p> Choose the type:</p>
+    <label>
+      <input type="radio" name="cdrType" value="message" [(ngModel)]="input.type"> Message
+    </label>
+    <label>
+      <input type="radio" name="cdrType" value="call" [(ngModel)]="input.type"> Call
+    </label>
+    <br><br>
+  
+        <p> Choose the category:</p>
+        <label>
+            <input type="radio" name="category" value="customer-name" [(ngModel)]="input.category" (input)="filterSuggestions(input.category)">
+            Customer name
+        </label>
+        <label>
+            <input type="radio" name="category" value="customer-number" [(ngModel)]="input.category" (input)="filterSuggestions(input.category)">
+            Customer number
+        </label>
+        <label>
+            <input type="radio" name="category" value="location" [(ngModel)]="input.category" (input)="filterSuggestions(input.category)">
+            Location
+        </label>
+        <label>
+            <input type="radio" name="category" value="_date" [(ngModel)]="input.category" (input)="displayInputField(true)">
+            Date
+        </label>
+        <br><br>
+
+        <div *ngIf="!isDate">
+            <input type="text" name="content" [(ngModel)]="input.content" (input)="filterSuggestions(input.content)">
+          
+        <ul *ngIf="input.category === 'customer-name' && filteredCustomerNames.length > 0 && !isDate">
+            <li *ngFor="let name of filteredCustomerNames" (click)="selectSuggestion(name)">{{ name }}</li>
+        </ul>
+        <ul *ngIf="input.category === 'customer-number' && filteredPhoneNumbers.length > 0 && !isDate">
+            <li *ngFor="let number of filteredPhoneNumbers" (click)="selectSuggestion(number)">{{ number }}</li>
+        </ul>
+        <ul *ngIf="input.category === 'location' && filteredLocations.length > 0 && !isDate">
+            <li *ngFor="let location of filteredLocations" (click)="selectSuggestion(location)">{{ location }}</li>
+        </ul>
+
+    </div>  
+        <input *ngIf="isDate" type="date" name="date" [(ngModel)] = "input.content">
+        <button type="submit" (click)="validate()">Search</button>
+    </form>
+  </div>
+<div *ngIf = "isCall; else elseBlock">
+  <table *ngIf="callResults && callResults.length > 0">
+    <thead>
+      <tr>
+        <th>Subscriber Name</th>
+        <th>Subscriber Phone</th>
+        <th>Receiver Name</th>
+        <th>Receiver Phone</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Duration</th>
+        <th>Subscriber Location</th>
+        <th>Receiver Location</th>
+        <th>Call Type</th>
+        <th>Voice Mail</th>
+        <th>Voice Mail Duration</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let call of callResults">
+        <tr>
+          <td>{{ call.subscriberName }}</td>
+          <td>{{ call.subscriberPhn }}</td>
+          <td>{{ call.recieverName }}</td>
+          <td>{{ call.recieverPhn }}</td>
+          <td>{{ call.date }}</td>
+          <td>{{ call.time }}</td>
+          <td>{{ call.duration }}</td>
+          <td>{{ call.subscriberLocation }}</td>
+          <td>{{ call.recieverLocation }}</td>
+          <td>{{ call.callType }}</td>
+          <td>{{ call.hasVoiceMail }}</td>
+          <td>{{ call.voiceMailDuration }}</td>
+          <td>{{ call.reason }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <div *ngIf="!callResults || callResults.length === 0">
+    <p>{{warn}}</p>
+  </div>
+</div>
+<ng-template #elseBlock>
+  <table *ngIf="messageResults && messageResults.length > 0">
+    <thead>
+      <tr>
+        <th>Subscriber Name</th>
+        <th>Subscriber Phone</th>
+        <th>Receiver Name</th>
+        <th>Receiver Phone</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Subscriber Location</th>
+        <th>Receiver Location</th>
+        <th>Type</th>
+        <th>Status</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let message of messageResults">
+        <tr>
+          <td>{{ message.subscriberName }}</td>
+          <td>{{ message.subscriberPhn }}</td>
+          <td>{{ message.recieverName }}</td>
+          <td>{{ message.recieverPhn }}</td>
+          <td>{{ message.date }}</td>
+          <td>{{ message.time }}</td>
+          <td>{{ message.subscriberLocation }}</td>
+          <td>{{ message.recieverLocation }}</td>
+          <td>{{ message.type}}</td>
+          <td>{{ message.status}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <div *ngIf="!callResults || callResults.length === 0">
+    <p>{{warn}}</p>
+  </div>
+
+</ng-template>
+</body>
+</html>

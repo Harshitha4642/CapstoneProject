@@ -1,0 +1,52 @@
+/* In your Angular component's CSS file (e.g., app.component.css) */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 0;
+  background-color: #fefefe; /* Dark background color */
+}
+
+.container {
+  max-width: 600px; /* Adjust the width as per your design */
+  padding: 20px;
+  border: 1px solid #0e0b64; /* Darker border color */
+  border-radius: 10px;
+  background-color: #ffffff; /* Dark background color */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(17, 7, 88, 0.5); /* Darker box shadow */
+  color: #fff; /* Text color */
+}
+
+.container h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.container button {
+  width: 100%;
+  padding: 15px 60px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #0e0657; /* Change to your desired button color */
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #020a04; /* Change to your desired button hover color */
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.container button:active {
+  background-color: #1c0664; /* Change to your desired button active color */
+}
+
